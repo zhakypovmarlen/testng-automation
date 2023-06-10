@@ -14,12 +14,10 @@ public class test1 {
         Driver.getDriver().get("https://google.com");
         Faker faker = new Faker();
         Driver.getDriver().findElement(By.name("q")).sendKeys(faker.harryPotter().character() + Keys.ENTER);
-
-
-
     }
+
     @Test
-    public void testFacebook(){
-        Driver.getDriver().get("https://facebook.com");
+    public void testing1(){
+        Driver.getDriver().get("https://etsy.com");
     }
 }
