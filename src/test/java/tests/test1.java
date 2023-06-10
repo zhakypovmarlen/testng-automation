@@ -16,8 +16,4 @@ public class test1 {
         Driver.getDriver().findElement(By.name("q")).sendKeys(faker.harryPotter().character() + Keys.ENTER);
     }
 
-    @Test
-    public void testing1(){
-        Driver.getDriver().get("https://etsy.com");
-    }
 }
