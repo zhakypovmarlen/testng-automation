@@ -1,12 +1,17 @@
-package page_object_model;
+package pages;
 
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class HomePage {
+public class GoogleHomePage {
 
-    public HomePage(){
+    public GoogleHomePage(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
+
+    @FindBy(name = "q")
+    public WebElement searchBar;
+
 }
