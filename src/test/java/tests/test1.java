@@ -20,8 +20,4 @@ public class test1 {
     public void testing1(){
         Driver.getDriver().get("https://etsy.com");
     }
-    @Test
-    public void testFacebook(){
-        Driver.getDriver().get("https://facebook.com");
-    }
 }
