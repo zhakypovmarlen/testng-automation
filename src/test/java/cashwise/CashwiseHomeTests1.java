@@ -31,7 +31,7 @@ public class CashwiseHomeTests1 {
         Assert.assertTrue(cashWiseHomePage.contactSubmittedPopup.isDisplayed());
     }
 
-    @Test
+    @Test(groups = {"smoke"})
     public void languageOptionTest(){
         CashWiseHomePage cashWiseHomePage = new CashWiseHomePage();
         cashWiseHomePage.languageOptionsBtn.click();
@@ -40,6 +40,16 @@ public class CashwiseHomeTests1 {
         }
         Assert.assertEquals(cashWiseHomePage.languageOptions.size(), 2);
     }
+
+    @Test
+    public void login(){
+        CashWiseHomePage cashWiseHomePage = new CashWiseHomePage();
+        cashWiseHomePage.signIn(Config.getValue("cashwiseEmail"), Config.getValue("cashwisePassword"));
+        ApplicationFlow.pause(4000);
+        Assert.assertEquals(Driver.getDriver().getCurrentUrl(), Config.getValue("cashwiseHomePageURL"));
+
+    }
+
 
 
 

@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="main automation">
-    <test name="Regression Test">
+    <test name="Smoke Test">
+
+        <groups>
+            <run>
+                <include name="smoke"></include>
+            </run>
+        </groups>
+
         <classes>
             <class name="cashwise.CashwiseHomeTests1"></class>
             <class name="studymate.StudyMateLogin"></class>
-            <class name="cashwise.CashwiseDashboard"></class>
         </classes>
     </test>
 </suite>

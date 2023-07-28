@@ -46,11 +46,14 @@ public class CashWiseHomePage {
     @FindBy(xpath = "//ul/li")
     public List<WebElement> languageOptions;
 
-    @FindBy(name = "email")
+    @FindBy(xpath = "(//input[@name='email'])[2]")
     public WebElement signInEmailInput;
 
-    @FindBy(name = "password")
+    @FindBy(xpath = "//input[@name='password']")
     public WebElement signInPasswordInput;
+
+    @FindBy(xpath = "(//button[.='Sign in'])[2]")
+    public WebElement signInBtn;
 
     public void sendMyInfo(String name, String phone, String email){
         nameInputCu.sendKeys(name);
@@ -62,8 +65,12 @@ public class CashWiseHomePage {
     public void signIn(String email, String password){
         signInButton.click();
         ApplicationFlow.pause(1500);
+        signInEmailInput.click();
         signInEmailInput.sendKeys(email);
-        signInPasswordInput.sendKeys(password + Keys.ENTER);
+        signInPasswordInput.click();
+        signInPasswordInput.sendKeys(password);
+        signInBtn.click();
+
 
     }
 

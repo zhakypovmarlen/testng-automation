@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="regression(failed)">
+<suite thread-count="8" parallel="methods" name="Failed suite [main automation]" guice-stage="DEVELOPMENT">
+  <test thread-count="8" parallel="methods" name="Regression Test(failed)">
     <classes>
       <class name="studymate.StudyMateLogin">
         <methods>
+          <include name="createGroupTest"/>
           <include name="cleanup"/>
           <include name="setup"/>
           <include name="login"/>
         </methods>
       </class> <!-- studymate.StudyMateLogin -->
+      <class name="cashwise.CashwiseDashboard">
+        <methods>
+          <include name="sideMenuTest"/>
+          <include name="cleanup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- cashwise.CashwiseDashboard -->
+      <class name="cashwise.CashwiseHomeTests1">
+        <methods>
+          <include name="languageOptionTest"/>
+          <include name="login"/>
+          <include name="contactUs"/>
+          <include name="cleanup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- cashwise.CashwiseHomeTests1 -->
     </classes>
-  </test> <!-- regression(failed) -->
-</suite> <!-- Failed suite [All Test Suite] -->
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [main automation] -->

@@ -26,7 +26,7 @@ public class StudyMateLogin {
 
 
 
-    @Test(priority = 2)
+    @Test(priority = 2, groups = {"smoke"})
     public void login(){
         StudyMateLoginPage studyMateLoginPage = new StudyMateLoginPage();
         studyMateLoginPage.emailInput.sendKeys(Config.getValue("email"));

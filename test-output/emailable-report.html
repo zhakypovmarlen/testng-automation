@@ -25,23 +25,542 @@ td,th {border:1px solid #009;padding:.25em .5em}
 <body>
 <table cellspacing="0" cellpadding="0" class="testOverview">
 <tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em"><a href="#t1">regression</a></td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">22.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Regression Test</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">6</td><td class="numi">33.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr id="t1"><th colspan="5">regression &#8212; passed</th></tr>
-<tr class="passedodd"><td>cashwise.CashwiseHomeTests1</td><td><a href="#m1"><b>languageOptionTest</b>  </a></td><td class="numi">1</td><td>1686872140007</td><td class="numi">554</td></tr>
-<tr class="passedeven"><td>studymate.StudyMateLogin</td><td><a href="#m2"><b>login</b>  </a></td><td class="numi">1</td><td>1686872152144</td><td class="numi">2462</td></tr>
-<tr class="passedodd"><td>cashwise.CashwiseHomeTests1</td><td><a href="#m3"><b>contactUs</b>  </a></td><td class="numi">1</td><td>1686872135862</td><td class="numi">565</td></tr>
-<tr class="passedeven"><td>studymate.StudyMateLogin</td><td><a href="#m4"><b>createGroupTest</b>  </a></td><td class="numi">1</td><td>1686872143524</td><td class="numi">5132</td></tr>
+<tr id="t1"><th colspan="5">Regression Test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td>studymate.StudyMateLogin</td><td><a href="#m1"><b>cleanup</b>  </a></td><td class="numi">1</td><td>1686883126758</td><td class="numi">53</td></tr>
+<tr class="failedeven"><td>cashwise.CashwiseHomeTests1</td><td><a href="#m2"><b>cleanup</b>  </a></td><td class="numi">2</td><td>1686883126757</td><td class="numi">54</td></tr>
+<tr class="failedodd"><td>studymate.StudyMateLogin</td><td><a href="#m3"><b>cleanup</b>  </a></td><td class="numi">1</td><td>1686883126758</td><td class="numi">53</td></tr>
+<tr class="failedeven"><td>cashwise.CashwiseHomeTests1</td><td><a href="#m4"><b>cleanup</b>  </a></td><td class="numi">2</td><td>1686883126757</td><td class="numi">54</td></tr>
+<tr class="failedodd"><td>cashwise.CashwiseDashboard</td><td><a href="#m5"><b>cleanup</b>  </a></td><td class="numi">1</td><td>1686883126759</td><td class="numi">52</td></tr>
+<tr class="failedeven"><td>cashwise.CashwiseHomeTests1</td><td><a href="#m6"><b>cleanup</b>  </a></td><td class="numi">2</td><td>1686883126757</td><td class="numi">54</td></tr>
+<tr><th colspan="5">Regression Test &#8212; failed</th></tr>
+<tr class="failedodd"><td>cashwise.CashwiseHomeTests1</td><td><a href="#m7"><b>languageOptionTest</b>  </a></td><td class="numi">1</td><td>1686883102528</td><td class="numi">24227</td></tr>
+<tr class="failedeven"><td>studymate.StudyMateLogin</td><td><a href="#m8"><b>login</b>  </a></td><td class="numi">1</td><td>1686883101252</td><td class="numi">13361</td></tr>
+<tr class="failedodd"><td>cashwise.CashwiseDashboard</td><td><a href="#m9"><b>sideMenuTest</b>  </a></td><td class="numi">1</td><td>1686883107196</td><td class="numi">19559</td></tr>
+<tr class="failedeven"><td>cashwise.CashwiseHomeTests1</td><td><a href="#m10"><b>login</b>  </a></td><td class="numi">1</td><td>1686883099156</td><td class="numi">27599</td></tr>
+<tr class="failedodd"><td>studymate.StudyMateLogin</td><td><a href="#m11"><b>createGroupTest</b>  </a></td><td class="numi">1</td><td>1686883107129</td><td class="numi">19626</td></tr>
+<tr class="failedeven"><td>cashwise.CashwiseHomeTests1</td><td><a href="#m12"><b>contactUs</b>  </a></td><td class="numi">1</td><td>1686883101272</td><td class="numi">25396</td></tr>
 </table>
-<h1>regression</h1>
-<h2 id="m1">cashwise.CashwiseHomeTests1:languageOptionTest</h2>
+<h1>Regression Test</h1>
+<h2 id="m1">cashwise.CashwiseHomeTests1:cleanup</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;20&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [351e48d5652f89002085c2d10951ef0e, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/p7/wk4k1gcs1mx...}, goog:chromeOptions: {debuggerAddress: localhost:54236}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54236/devtoo..., se:cdpVersion: 114.0.5735.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:148)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:445)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:279)
+	at utilities.Driver.quit(Driver.java:37)
+	at cashwise.CashwiseHomeTests1.cleanup(CashwiseHomeTests1.java:25)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: The driver server has unexpectedly died!
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;20&apos;
+Driver info: driver.version: unknown
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:144)
+	... 25 more
+Caused by: org.openqa.selenium.WebDriverException: The driver server has unexpectedly died!
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;20&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:130)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	... 3 more
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4063
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:121)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4063
+	at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
+	at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4063
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:673)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 15 stack frames</div>
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">studymate.StudyMateLogin:login</h2>
+<h2 id="m2">cashwise.CashwiseDashboard:cleanup</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;20&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [351e48d5652f89002085c2d10951ef0e, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/p7/wk4k1gcs1mx...}, goog:chromeOptions: {debuggerAddress: localhost:54236}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54236/devtoo..., se:cdpVersion: 114.0.5735.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:148)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:445)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:279)
+	at utilities.Driver.quit(Driver.java:37)
+	at cashwise.CashwiseDashboard.cleanup(CashwiseDashboard.java:27)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: The driver server has unexpectedly died!
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;20&apos;
+Driver info: driver.version: unknown
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:144)
+	... 25 more
+Caused by: org.openqa.selenium.WebDriverException: The driver server has unexpectedly died!
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;20&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:130)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	... 3 more
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4063
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:121)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4063
+	at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
+	at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4063
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:673)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 15 stack frames</div>
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">cashwise.CashwiseHomeTests1:contactUs</h2>
+<h2 id="m3">cashwise.CashwiseHomeTests1:cleanup</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;20&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [351e48d5652f89002085c2d10951ef0e, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/p7/wk4k1gcs1mx...}, goog:chromeOptions: {debuggerAddress: localhost:54236}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54236/devtoo..., se:cdpVersion: 114.0.5735.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:148)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:445)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:279)
+	at utilities.Driver.quit(Driver.java:37)
+	at cashwise.CashwiseHomeTests1.cleanup(CashwiseHomeTests1.java:25)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: The driver server has unexpectedly died!
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;20&apos;
+Driver info: driver.version: unknown
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:144)
+	... 25 more
+Caused by: org.openqa.selenium.WebDriverException: The driver server has unexpectedly died!
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;20&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:130)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	... 3 more
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4063
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:121)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4063
+	at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
+	at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4063
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:673)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 15 stack frames</div>
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">studymate.StudyMateLogin:createGroupTest</h2>
+<h2 id="m4">studymate.StudyMateLogin:cleanup</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;20&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [351e48d5652f89002085c2d10951ef0e, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/p7/wk4k1gcs1mx...}, goog:chromeOptions: {debuggerAddress: localhost:54236}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54236/devtoo..., se:cdpVersion: 114.0.5735.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:148)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:445)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:279)
+	at utilities.Driver.quit(Driver.java:37)
+	at studymate.StudyMateLogin.cleanup(StudyMateLogin.java:59)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: The driver server has unexpectedly died!
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;20&apos;
+Driver info: driver.version: unknown
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:144)
+	... 25 more
+Caused by: org.openqa.selenium.WebDriverException: The driver server has unexpectedly died!
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;20&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:130)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	... 3 more
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4063
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:121)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4063
+	at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
+	at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4063
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:673)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 15 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">cashwise.CashwiseHomeTests1:languageOptionTest</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;20&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [351e48d5652f89002085c2d10951ef0e, clickElement {id=66DAF60225004E044D71F02F35BF64B4_element_15}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/p7/wk4k1gcs1mx...}, goog:chromeOptions: {debuggerAddress: localhost:54236}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54236/devtoo..., se:cdpVersion: 114.0.5735.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (351e48d5652f89002085c2d10951ef0e)] -&gt; xpath: (//div[@class=&apos;App&apos;]/div/div/div/div)[1]]
+Session ID: 351e48d5652f89002085c2d10951ef0e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at cashwise.CashwiseHomeTests1.languageOptionTest(CashwiseHomeTests1.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 15 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">studymate.StudyMateLogin:login</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=114.0.5735.133)
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;20&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [351e48d5652f89002085c2d10951ef0e, sendKeysToElement {id=66DAF60225004E044D71F02F35BF64B4_element_2, value=[Ljava.lang.CharSequence;@385803f0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/p7/wk4k1gcs1mx...}, goog:chromeOptions: {debuggerAddress: localhost:54236}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54236/devtoo..., se:cdpVersion: 114.0.5735.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (351e48d5652f89002085c2d10951ef0e)] -&gt; name: email]
+Session ID: 351e48d5652f89002085c2d10951ef0e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
+	at studymate.StudyMateLogin.login(StudyMateLogin.java:32)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 15 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">cashwise.CashwiseDashboard:sideMenuTest</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;20&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [351e48d5652f89002085c2d10951ef0e, clickElement {id=66DAF60225004E044D71F02F35BF64B4_element_1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/p7/wk4k1gcs1mx...}, goog:chromeOptions: {debuggerAddress: localhost:54236}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54236/devtoo..., se:cdpVersion: 114.0.5735.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (351e48d5652f89002085c2d10951ef0e)] -&gt; xpath: //button[1]]
+Session ID: 351e48d5652f89002085c2d10951ef0e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at pages.CashWiseHomePage.signIn(CashWiseHomePage.java:66)
+	at cashwise.CashwiseDashboard.sideMenuTest(CashwiseDashboard.java:33)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 15 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">cashwise.CashwiseHomeTests1:login</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;20&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [351e48d5652f89002085c2d10951ef0e, clickElement {id=66DAF60225004E044D71F02F35BF64B4_element_16}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/p7/wk4k1gcs1mx...}, goog:chromeOptions: {debuggerAddress: localhost:54236}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54236/devtoo..., se:cdpVersion: 114.0.5735.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (351e48d5652f89002085c2d10951ef0e)] -&gt; xpath: (//input[@name=&apos;email&apos;])[2]]
+Session ID: 351e48d5652f89002085c2d10951ef0e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at pages.CashWiseHomePage.signIn(CashWiseHomePage.java:68)
+	at cashwise.CashwiseHomeTests1.login(CashwiseHomeTests1.java:47)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 15 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">studymate.StudyMateLogin:createGroupTest</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;20&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [351e48d5652f89002085c2d10951ef0e, sendKeysToElement {id=66DAF60225004E044D71F02F35BF64B4_element_2, value=[Ljava.lang.CharSequence;@2757fce}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/p7/wk4k1gcs1mx...}, goog:chromeOptions: {debuggerAddress: localhost:54236}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54236/devtoo..., se:cdpVersion: 114.0.5735.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (351e48d5652f89002085c2d10951ef0e)] -&gt; name: email]
+Session ID: 351e48d5652f89002085c2d10951ef0e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
+	at pages.StudyMateLoginPage.login(StudyMateLoginPage.java:30)
+	at studymate.StudyMateLogin.createGroupTest(StudyMateLogin.java:42)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 15 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">cashwise.CashwiseHomeTests1:contactUs</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=114.0.5735.133)
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;20&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [351e48d5652f89002085c2d10951ef0e, sendKeysToElement {id=66DAF60225004E044D71F02F35BF64B4_element_3, value=[Ljava.lang.CharSequence;@dfef058}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/p7/wk4k1gcs1mx...}, goog:chromeOptions: {debuggerAddress: localhost:54236}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54236/devtoo..., se:cdpVersion: 114.0.5735.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (351e48d5652f89002085c2d10951ef0e)] -&gt; name: name]
+Session ID: 351e48d5652f89002085c2d10951ef0e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
+	at pages.CashWiseHomePage.sendMyInfo(CashWiseHomePage.java:59)
+	at cashwise.CashwiseHomeTests1.contactUs(CashwiseHomeTests1.java:30)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 15 stack frames</div>
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
